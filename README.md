@@ -1,36 +1,41 @@
-cat > README.md << 'EOL'
-# Wanderlust
+# WhatsApp Clone
 
-A web application for listing and managing travel destinations built with Node.js, Express, and MongoDB.
+A simple WhatsApp clone built with Node.js, Express, MongoDB, and EJS. This application allows users to register with just a username and exchange messages in real-time.
+
+## Features
+
+- Single page interface
+- User registration with just a username (no authentication required)
+- Real-time messaging using Socket.io
+- Select sender and receiver from dropdown menus
+- Message history between users
+- Clean and intuitive UI
 
 ## Tech Stack
 
 - **Backend**: Node.js, Express
 - **Database**: MongoDB
-- **View Engine**: EJS with EJS-Mate
-- **Development**: LiveReload for real-time updates
-
-## Features
-
-- CRUD operations for travel listings
-- RESTful routing
-- Dynamic templating with EJS
-- Live reload during development
-- Method override for HTTP methods
-- Static file serving
-- Modular project structure
-
-## Project Structure
+- **Frontend**: EJS, CSS, JavaScript
+- **Real-time Communication**: Socket.io
 
 ## Prerequisites
 
 - Node.js
-- MongoDB running on localhost:27017
+- MongoDB
 
-## Installation
+## Project Structure
 
-1. Clone the repository:
-```bash
-git clone https://github.com/RezuanMustafaHasan/Basic-Whatsapp-Clone.git
-cd Basic-Whatsapp-Clone
+├── app.js              # Main application file
+├── models/             # Database models
+│   ├── Message.js      # Message schema
+│   └── User.js         # User schema
+├── public/             # Static files
+│   ├── css/            # Stylesheets
+│   │   └── style.css   # Main stylesheet
+│   └── js/             # Client-side JavaScript
+│       └── main.js     # Main JavaScript file
+├── routes/             # Application routes
+│   └── index.js        # Main routes
+└── views/              # EJS templates
+    └── index.ejs       # Main view
 
